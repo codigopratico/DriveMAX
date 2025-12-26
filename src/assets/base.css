@@ -20,11 +20,14 @@
   --text-link: clamp(15px, 2vw, 19px);
   --text-link-responsivo: clamp(18px, 2vw, 22px);
 
+  --text-butao-principal: clamp(16px, 2vw, 20px);
   --text-butao: clamp(12px, 2vw, 17px);
   --text-butao-responsivo: clamp(18px, 2vw, 22px);
 
-  --img-logo: clamp(38px, 3vw, 48px);
+  --text-titulo: clamp(40px, 4vw, 62px);
+  --text-subtitulo: clamp(26px, 3vw, 32px);
 
+  --img-logo: clamp(38px, 3vw, 48px);
 
   --width-links: clamp(100px, 95vw, 700px);
 }

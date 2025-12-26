@@ -7,7 +7,7 @@ const link_2 = ref('Serviços')
 const link_3 = ref('Depoimentos')
 const link_4 = ref('Como Funciona')
 const link_5 = ref('Contato')
-const btn = ref('Agendar Consultoria')
+const btn = ref('AGENDAR CONSULTORIA')
 
 const responsivo = ref(false)
 
@@ -79,14 +79,16 @@ const toggle = () => {
         gap: 12px;
     }.links a{
         border-right: 2px solid var(color-borda);
-        padding: 2px 12px 0 2px;
+        padding: 5px 10px 5px 10px;
         font-size: var(--text-link);
+        text-shadow: 10px 10px 25px #1f1f1f;
+    }.links a:focus{
+        border-bottom: 3px solid var(--color-laranja);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+        border-radius: 7px;
     }
     button{
-        margin-left: 6px;
-        background-color: var(--color-laranja);
-        font-size: var(--text-butao);
-        cursor: pointer;
+        margin-left: 6px;        
     }
     i{
         font-size: 33.5px;
@@ -95,7 +97,7 @@ const toggle = () => {
     }
 
     /* Menu resposivo */
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 1100px) {
         .cabecalho{
             flex-direction: column;
             padding: 10px 22px;
@@ -117,26 +119,27 @@ const toggle = () => {
             padding: 10px 0;
             align-items: center;
             background: rgba(255, 255, 255, 0.001);
-            backdrop-filter: blur(7px);
+            backdrop-filter: blur(20px);
         }
         .links{
             flex-direction: column;
             align-items: left;
             padding-bottom: 10px;
-            gap: 15px;
+            gap: 10px;
             padding: 0 10px;
         }
         .links a{
             font-size: var(--text-link-responsivo);
             border-bottom: 1px solid var(--color-branco);
-            padding: 0 0px 5px 5px;
+            padding: 5px 0px 10px 5px;
             border-right: none;
             width: var(--width-links);
+        }.links a:focus{
+            padding: 10px 0px 10px 5px;
         }
         button{
             font-size: var(--text-butao-responsivo);
             margin-top: 10px;
         }
-        
     }
 </style>
