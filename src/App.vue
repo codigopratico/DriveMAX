@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import PrincipalView from '@/components/PrincipalView.vue';
+</script>
 
 <template>
-  <div></div>
+  <div>
+    <PrincipalView />
+  </div>
 </template>
 
 <style scoped></style>

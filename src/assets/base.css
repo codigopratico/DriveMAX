@@ -1,21 +1,36 @@
-/* :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+/* CORES */
+:root {
+  --color-laranja: #F57C00;
+  --color-laranja-hover: #E56F00;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --color-preto: #1F2A33;
+  --color-preto-texto: #1E1E1E;
+  --color-branco: #FFF;
 
-  --vt-c-indigo: #2c3e50;
+  --color-fundo-branco: #F4F4F4;
+  --color-borda: #D9D9D9;
+  --color-texto-secundario: #6B6B6B;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --color-estrela: #FFC107;
+  --color-sucesso: #4CAF50;
+}
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-} */
+/* TAMANHO */
+:root{
+  --text-link: clamp(15px, 2vw, 19px);
+  --text-link-responsivo: clamp(18px, 2vw, 22px);
+
+  --text-butao: clamp(12px, 2vw, 17px);
+  --text-butao-responsivo: clamp(18px, 2vw, 22px);
+
+  --img-logo: clamp(38px, 3vw, 48px);
+
+
+  --width-links: clamp(100px, 95vw, 700px);
+}
+
+:root{
+  --family-principal: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial,
+    sans-serif;
+}
