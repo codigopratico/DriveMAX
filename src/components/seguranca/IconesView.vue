@@ -6,9 +6,24 @@ import verificado from '@/assets/img/secao_3/icone_verificado.png'
 import negocio from '@/assets/img/secao_3/icone_negocio.png'
 
 const icones = ref([
-    {id: 1, img: inspecao, alt: 'Inspeção', titulo: 'Inspeção Completa'},
-    {id: 1, img: verificado, alt: 'Verificado',titulo: 'Histórico Verificado'},
-    {id: 3, img: negocio, alt: 'Segurança', titulo: 'Negócio Tranparente'}
+    {
+        id: 1, 
+        img: inspecao, 
+        alt: 'Inspeção', 
+        titulo: 'Inspeção Completa'
+    },
+    {
+        id: 2, 
+        img: verificado, 
+        alt: 'Verificado',
+        titulo: 'Histórico Verificado'
+    },
+    {
+        id: 3, 
+        img: negocio, 
+        alt: 'Segurança', 
+        titulo: 'Negócio Tranparente'
+    }
 ])
 </script>
 
@@ -50,7 +65,7 @@ const icones = ref([
         background-color: var(--color-branco);
     }
     h4{
-        font-size: var(--text-redes);
+        font-size: var(--text-seguranca-titulo);
         padding-top: 10px;
         color: var(--color-preto);
     }

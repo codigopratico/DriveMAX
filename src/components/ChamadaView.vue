@@ -4,8 +4,8 @@ import RodapeView from './chamada/RodapeView.vue';
 
 const titulo = ref('PRONTO PARA COMPRAR SEU CARRO IDEAL?')
 const subtitulo = ref('Deixe a DriveMax guiar você até a melhor escolha!')
-const btn1 = ref('AGENDAR CONSULTORIA')
-const btn2 = ref('FALAR COM UM ESPECIALISTA')
+const btn1 = ref('NEGOCIAR SEGURO')
+const btn2 = ref('FALAR COM CONSULTOR')
 
 </script>
 
@@ -17,8 +17,8 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
                 <h4>{{ subtitulo }}</h4>
             </div>
             <div class="butoes">
-                <button>{{ btn1 }}</button>
-                <button id="btn2">{{ btn2 }}</button>
+                <button><a href="https://github.com/codigopratico" target="_blank">{{ btn1 }}</a></button>
+                <button id="btn2"><a href="https://github.com/codigopratico" target="_blank">{{ btn2 }}</a></button>
             </div>
         </div>
         <RodapeView />
@@ -66,6 +66,9 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
     }
     button{
         font-size: var(--text-butao-principal);
+    }
+    button a{
+        padding: 10px;
     }
 
     @media screen and (max-width: 550px){

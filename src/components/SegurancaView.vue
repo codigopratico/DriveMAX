@@ -6,7 +6,7 @@ import IconesView from './seguranca/IconesView.vue';
 const titulo = ref('COMPRE SEU CARRO COM SEGURANÇA')
 const texto = ref('Tenha a tranquilidade de fazer um bom negócio sem surpresas.')
 const btn1 = ref('AGENDAR CONSULTORIA')
-const btn2 = ref('FALAR COM UM ESPECIALISTA')
+const btn2 = ref('FALAR COM ESPECIALISTA')
 </script>
 
 <template>
@@ -17,13 +17,13 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
         <div class="texto">
             <h3>{{ texto }}</h3>
         </div>
-        <IconesView />
+        <IconesView :icones="icones" />
         <div class="imagens">
             <div class="img">
             </div>
             <div class="img2">
-                <button>{{ btn1 }}</button>
-                <button id="secundario">{{ btn2 }}</button>
+                <button><a href="https://github.com/codigopratico" target="_blank">{{ btn1 }}</a></button>
+                <button id="secundario"><a href="https://github.com/codigopratico" target="_blank">{{ btn2 }}</a></button>
             </div>
         </div>
     </div>
@@ -72,6 +72,8 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
         gap: 10px;
         padding-bottom: clamp(20px, 3vw, 45px);
         border-radius: 0 0 15px 15px;
+    }.texto{
+        text-align: center;
     }
     h3{
         color: var(--color-preto);
@@ -80,6 +82,9 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
     button{
         font-size: var(--text-butao-responsivo);
         border: 1px solid var(--color-branco);
+    }
+    button a{
+        padding: 10px;
     }
     #secundario{
         background-color: var(--color-texto-secundario);

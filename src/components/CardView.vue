@@ -1,23 +1,18 @@
 <script setup>
-import { ref } from 'vue'
 
-import necessidade from '@/assets/img/secao_2/icone_necessidade.png'
-import busca from '@/assets/img/secao_2/icone_busca.png'
-import negociacao from '@/assets/img/secao_2/icone_negociacao.png'
-
-const servicos = ref([
-    {id: 1, img: necessidade, alt: 'Necessidades', titulo: 'ANALISAMOS SUAS NECESSIDADES', subtitulo: 'Entendemos o que você procura.'},
-    {id: 2, img: busca, alt: 'Avaliação', titulo: 'BUSCAMOS E AVALIAMOS OS MELHORES CARROS', subtitulo: 'Selecionamos as melhores opções para você.'},
-    {id: 3, img: negociacao, alt: 'Negociação', titulo: 'NEGOCIAMOS O MELHOR PREÇO', subtitulo: 'Garantimos as melhores condições para a compra do seu carro.'}
-    
-])
+const props = defineProps({
+    servicos: {
+        type: Array,
+        required: true
+    }
+})
 </script>
 
 <template>
     <div class="cards">
         <div 
         class="card"
-        v-for="servico in servicos" 
+        v-for="servico in props.servicos" 
         :key="servico.id"
         >
             <img 
@@ -43,7 +38,7 @@ const servicos = ref([
     }.card{
         display: flex;
         flex-direction: column;
-        padding: 15px 10px;
+        padding: 10px 15px;
         gap: 10px;
         align-items: center;
         height: 350px;
@@ -70,6 +65,7 @@ const servicos = ref([
     }
     h2{
         font-size: var(--text-servicos-titulo);
+        min-width: 280px;
     }
     p{
         font-size: var(--text-servicos-subtitulo);
@@ -77,5 +73,11 @@ const servicos = ref([
     img{
         width: fit-content;
         height: 140px;
+    }
+
+    @media screen and (max-width: 768px) {
+        h2{
+            min-width: none;
+        }
     }
 </style>

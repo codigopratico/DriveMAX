@@ -45,11 +45,11 @@ const email = ref('drivemax@gmail.com')
                     <i class="bi bi-briefcase-fill"></i>
                     {{ link_2 }}
                 </a>
-                <a href="#">
+                <a href="#depoimentos">
                     <i class="bi bi-chat-dots-fill"></i>
                     {{ link_3 }}
                 </a>
-                <a href="#">
+                <a href="#seguranca">
                     <i class="bi bi-shield-fill-check"></i>
                     {{ link_4 }}
                 </a>

@@ -1,0 +1,118 @@
+<script setup>
+import { ref } from 'vue'
+
+import homem from '@/assets/img/secao_4/depoimento_masculino.png'
+import mulher from '@/assets/img/secao_4/depoimento_feminino.png'
+
+const avaliacoes = ref([
+    {
+        id: 1, 
+        img: homem, 
+        alt: 'Homem', 
+        nome: 'Carlos S.', 
+        comentario: '"Achei o carro perfeito e negociei sem dor de cabeça. Fantástico!"'
+    },
+    {
+        id: 2,
+        img: mulher,
+        alt: 'Mulher',
+        nome: 'Mariana L.',
+        comentario: '"A DriveMax me deu muita segurança na compra. Recomendo a todos!"'
+    }
+])
+</script>
+
+<template>
+    <div class="avaliacoes">
+        <div 
+        class="avaliacao"
+        v-for="avaliacao in avaliacoes"
+        :key="avaliacao.id"
+        > 
+            <div class="perfil">
+                <img :src="avaliacao.img" :alt="avaliacao">
+                <div class="informacoes">
+                    <h2>{{ avaliacao.nome }}</h2>
+                    <div class="icones">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="comentario">
+                <p>{{ avaliacao.comentario }}</p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+    .avaliacoes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+    .avaliacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 10px;
+        min-width: 200px;
+        max-width: 340px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        min-height: 350px;
+        max-height: 500px;
+    }
+    .perfil{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .informacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    img{
+        height: 160px;
+        width: fit-content;
+        border-radius: 50%;
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+    }
+    .icones{
+        display: flex;
+        gap: 3px;
+    }
+    i{
+        color: var(--color-estrela);
+        font-size: 20px;
+        box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.15);
+    }
+    h2, p{
+        color: var(--color-preto);
+    }
+    .comentario{
+        width: clamp(75%, 5vw, 80%);
+    }
+    h2{
+        font-size: var(--text-subtitulo);
+        text-shadow: 5px 5px 25px rgba(255, 255, 255, 1);
+    }
+    p{
+        font-size: var(--text-comentario);
+    }
+
+    @media screen and (max-width: 768px) {
+        .avaliacao{
+            min-height: 260px;
+        }
+    }
+</style>

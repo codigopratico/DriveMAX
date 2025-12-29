@@ -6,7 +6,7 @@ import CabecalhoView from '@/components/home/CabecalhoView.vue'
 const texto = ref('Nós ajudamos você a comprar o carro ideal com segurança e confiança.')
 
 const btn1 = ref('AGENDAR CONSULTORIA')
-const btn2 = ref('Saiba Mais')
+const btn2 = ref('SAIBA MAIS')
 </script>
 
 <template>
@@ -16,8 +16,8 @@ const btn2 = ref('Saiba Mais')
             <h1>ESCOLHER O <span>CARRO CERTO</span> PODE SER COMPLICADO.</h1>
             <h4>{{ texto }}</h4>
             <div class="botoes">
-                <button>{{ btn1 }}</button>
-                <button id="secundario">{{ btn2 }}</button>
+                <button href=""><a href="https://github.com/codigopratico" target="_blank">{{ btn1 }}</a></button>
+                <button id="secundario"><a href="#servicos">{{ btn2 }}</a></button>
             </div>
         </div>
     </div>
@@ -81,6 +81,9 @@ const btn2 = ref('Saiba Mais')
     span{
         color: var(--color-laranja);
     }
+    button a{
+        padding: 10px;
+    }
 
     .botoes{
         display: flex;
@@ -119,7 +122,11 @@ const btn2 = ref('Saiba Mais')
         }
     }
 
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 435px) {
+        .botoes{
+            flex-direction: column;
+            padding: 0 60px;
+        }
         .conteudo{
             padding: 230px 0 0 3%;
             gap: 50px;

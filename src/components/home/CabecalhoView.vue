@@ -7,7 +7,7 @@ const link_2 = ref('Serviços')
 const link_3 = ref('Depoimentos')
 const link_4 = ref('Compra Segura')
 const link_5 = ref('Contato')
-const btn = ref('AGENDAR CONSULTORIA')
+const btn = ref('NEGOCIAR SEGURO')
 
 const responsivo = ref(false)
 
@@ -40,11 +40,11 @@ const toggle = () => {
                     <i class="bi bi-briefcase-fill"></i>
                     {{ link_2 }}
                 </a>
-                <a href="#">
+                <a href="#depoimentos">
                     <i class="bi bi-chat-dots-fill"></i>
                     {{ link_3 }}
                 </a>
-                <a href="#">
+                <a href="#seguranca">
                     <i class="bi bi-shield-fill-check"></i>
                     {{ link_4 }}
                 </a>
@@ -54,7 +54,7 @@ const toggle = () => {
                 </a>
             </nav>
             <div class="butao">
-                <button>{{ btn }}</button>
+                <button><a href="https://github.com/codigopratico" target="_blank">{{ btn }}</a></button>
             </div>
         </div>
     </header>
@@ -102,13 +102,20 @@ const toggle = () => {
         display: flex;
         align-items: center;
         gap: 3px;
+        transition: all 200ms;
     }.links a:focus{
         border-bottom: 3px solid var(--color-laranja);
         box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
         border-radius: 7px;
+    }.links a:hover{
+        transform: scale(1.02);
+        text-shadow: 3px 3px 12px #1f1f1f;
     }
     button{
         margin-left: 6px;        
+    }
+    button a{
+        padding: 10px;
     }
     i{
         font-size: 33.5px;
@@ -121,7 +128,7 @@ const toggle = () => {
     }
 
     /* Menu resposivo */
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1300px) {
         .cabecalho{
             flex-direction: column;
             padding: 10px 22px;

@@ -34,9 +34,13 @@
   --text-titulo-secundario: clamp(32px, 4vw, 45px);
   --text-subtitulo-secundario: clamp(23px, 3vw, 30px);
 
-  --text-servicos-principal: clamp(12px, 3vw, 18px);
+  --text-servicos-principal: clamp(11px, 3vw, 18px);
   --text-servicos-titulo: clamp(20px, 3vw, 26px);
   --text-servicos-subtitulo: clamp(17px, 2vw, 19px);
+
+  --text-seguranca-titulo: clamp(17px, 2vw, 19px);
+
+  --text-comentario: clamp(20px, 3vw, 25px);
 
   --img-logo: clamp(40px, 3vw, 48px);
 

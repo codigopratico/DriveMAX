@@ -3,6 +3,9 @@ import PrincipalView from '@/components/PrincipalView.vue';
 import ChamadaView from './components/ChamadaView.vue';
 import ServicosView from './components/ServicosView.vue';
 import SegurancaView from './components/SegurancaView.vue';
+import EscolhaView from './components/EscolhaView.vue';
+import DepoimentosView from './components/DepoimentosView.vue';
+
 
 </script>
 
@@ -16,8 +19,16 @@ import SegurancaView from './components/SegurancaView.vue';
       <ServicosView />
     </section>
 
+    <section id="depoimentos">
+      <DepoimentosView />
+    </section>
+
     <section id="seguranca">
       <SegurancaView />
+    </section>
+
+    <section class="escolha">
+      <EscolhaView />
     </section>
 
     <section id="contato">
