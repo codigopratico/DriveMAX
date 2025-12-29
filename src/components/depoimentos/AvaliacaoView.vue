@@ -61,14 +61,15 @@ const avaliacoes = ref([
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 25px;
         padding: 25px 10px;
         min-width: 200px;
         max-width: 340px;
         border-radius: 15px;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-        min-height: 350px;
-        max-height: 500px;
+        min-height: 420px;
+        max-height: 700px;
         background-color: var(--color-branco);
     }
     .perfil{
@@ -101,7 +102,7 @@ const avaliacoes = ref([
         color: var(--color-preto);
     }
     .comentario{
-        width: clamp(75%, 5vw, 80%);
+        width: clamp(80%, 5vw, 85%);
     }
     h2{
         font-size: var(--text-subtitulo);
