@@ -63,6 +63,12 @@ const icones = ref([
         padding: 10px;
         border-radius: 15px;
         background-color: var(--color-branco);
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
+        transition: all 300ms;
+    }
+    .icone:hover{
+        transform: scale(1.02);
+        box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.15);
     }
     h4{
         font-size: var(--text-seguranca-titulo);

@@ -65,10 +65,10 @@ const subtitulo = ref('Nós estamos aqui para ajudar você.')
     }
     hr{
         width: 90%;
-        border: 1px solid var(--color-preto-texto);
+        border: 1px solid var(--color-branco);
     }
     h2{
-        color: var(--color-preto);
+
         font-size: var(--text-servicos-titulo);
     }
 

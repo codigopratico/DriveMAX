@@ -46,9 +46,7 @@ const btn2 = ref('FALAR COM CONSULTOR')
         align-items: center;
         text-align: center;
     }
-    h1, h4{
-        color: var(--color-preto-texto);
-    }
+
     .texto h1{
         font-size: var(--text-titulo-secundario);
     }
@@ -58,11 +56,11 @@ const btn2 = ref('FALAR COM CONSULTOR')
     }
     .butoes{
         display: flex;
-        gap: 5px;
+        gap: 15px;
     }
     #btn2{
         background-color: var(--color-texto-secundario);
-        border: 1px solid var(--color-preto);
+        border: 1px solid var(--color-branco);
     }
     button{
         font-size: var(--text-butao-principal);

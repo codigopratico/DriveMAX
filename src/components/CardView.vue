@@ -51,7 +51,7 @@ const props = defineProps({
         transition: ease-in-out 300ms;
     }.card:hover{
         transform: scale(1.01);
-        box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 4px 20px rgba(255, 255, 255, 0.2);
     }
     .texto{
         display: flex;

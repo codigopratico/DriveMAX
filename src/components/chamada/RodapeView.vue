@@ -70,6 +70,7 @@ const email = ref('drivemax@gmail.com')
         background-color: var(--color-rodape-bg);
         padding: 40px 0 20px;
         border-radius: 0px 0 15px 15px;
+        box-shadow: -2px -2px 7px 1px rgba(255, 255, 255, 0.3);
     }
     .redes{
         display: flex;

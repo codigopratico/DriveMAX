@@ -76,7 +76,6 @@ const btn2 = ref('FALAR COM ESPECIALISTA')
         text-align: center;
     }
     h3{
-        color: var(--color-preto);
         font-size: var(--text-servicos-titulo);
     }
     button{

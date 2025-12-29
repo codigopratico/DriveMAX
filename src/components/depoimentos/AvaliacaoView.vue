@@ -71,6 +71,11 @@ const avaliacoes = ref([
         min-height: 420px;
         max-height: 700px;
         background-color: var(--color-branco);
+        transition: all 300ms;
+    }
+    .avaliacao:hover{
+        transform: scale(1.02);
+        box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.15);
     }
     .perfil{
         display: flex;
