@@ -69,6 +69,7 @@ const avaliacoes = ref([
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
         min-height: 350px;
         max-height: 500px;
+        background-color: var(--color-branco);
     }
     .perfil{
         display: flex;
@@ -85,7 +86,7 @@ const avaliacoes = ref([
         height: 160px;
         width: fit-content;
         border-radius: 50%;
-        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
     }
     .icones{
         display: flex;
